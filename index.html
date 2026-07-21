@@ -37,8 +37,9 @@
     --bg-panel:#101830;
     --fg:#e9ecf5;
     --fg-muted:#94a1c2;
-    --gold:#c9a227;
-    --gold-bright:#e8c667;
+    --gold:#2AABEE;
+    --gold-bright:#6FC8F5;
+    --gold-gradient:linear-gradient(135deg,#2AABEE,#229ED9);
     --line:rgba(233,236,245,0.10);
     --up:#2f8f6f;
     --down:#b0463f;
@@ -152,8 +153,8 @@
   .cta-btn{
     display:block;
     width:100%;
-    background:var(--gold);
-    color:#0a0f1c;
+    background:var(--gold-gradient);
+    color:#ffffff;
     font-weight:600;
     font-size:16px;
     text-align:center;
@@ -198,7 +199,7 @@
   .page-footer{
     text-align:center;
     padding:20px 0 30px;
-    font-size:11px;
+    font-size:16px;
     color:rgba(233,236,245,0.35);
   }
   .page-footer a{text-decoration:underline;margin:0 6px;}
@@ -215,21 +216,18 @@
   }
   .sticky-bar .inner{
     max-width:480px;margin:0 auto;
-    display:flex;align-items:center;gap:12px;
   }
-  .sticky-bar .label{
-    font-size:11px;color:var(--fg-muted);flex:1;line-height:1.3;
-  }
-  .sticky-bar .label b{color:var(--fg);display:block;font-size:13px;}
   .sticky-btn{
-    background:var(--gold);
-    color:#0a0f1c;
+    display:block;
+    width:100%;
+    text-align:center;
+    background:var(--gold-gradient);
+    color:#ffffff;
     font-weight:600;
-    font-size:14px;
-    padding:12px 18px;
+    font-size:15px;
+    padding:14px 18px;
     border-radius:9px;
     text-decoration:none;
-    white-space:nowrap;
   }
 
   :focus-visible{outline:2px solid var(--gold-bright);outline-offset:2px;}
@@ -276,14 +274,9 @@
        onclick="fbq('track','Lead');">
       Join the Free Telegram Channel
     </a>
-    <div class="cta-sub">Free to join · No card required</div>
 
     <div class="disclaimer">
       <b>Educational purpose only.</b> Content shared on this channel is for learning technical analysis and market structure. It is not investment advice, a buy/sell recommendation, or a guarantee of returns. Markets carry risk, including loss of capital — please do your own research or consult a SEBI-registered advisor before trading.
-    </div>
-
-    <div class="redirect-notice" id="redirectNotice">
-      Opening Telegram automatically in <span id="countdown">6</span>s — or join now above.
     </div>
 
     <a href="https://t.me/+sYEXDl3MrcRiMmQ9" target="_blank" rel="noopener"
@@ -294,26 +287,29 @@
     <div class="cta-sub">Join 1000s learning the market properly</div>
 
     <div class="page-footer">
-      <a href="TC_LINK">Terms</a>·<a href="PP_LINK">Privacy</a>
       <div style="margin-top:8px;">
-        Ads by <a href="AGENCY_LINK">AGENCY_NAME</a>
+        Ads by <a href="https://t.me/+kq0tYO3r7PJkZTZl">Ads_By_King</a>
       </div>
     </div>
 
   </div>
 
+
+  
   <!-- sticky bar: always visible, does NOT auto-fire a lead -->
   <div class="sticky-bar">
     <div class="inner">
-      <div class="label"><b>Free · Open now</b>Market education channel</div>
       <a href="https://t.me/+sYEXDl3MrcRiMmQ9" target="_blank" rel="noopener"
          class="sticky-btn" id="ctaSticky"
          onclick="fbq('track','Lead');">
-        Join
+        Join Free Telegram Channel
       </a>
     </div>
   </div>
 
+
+
+  
   <script>
     // ---- Auto-redirect: NOT counted as a Lead, by design ----
     // Only the three manual buttons above fire fbq('track','Lead').
